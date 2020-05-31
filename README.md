@@ -5,13 +5,13 @@ TO USE:
 
 .\
 ├── templates\
-│...├── blog.html\
-│...├── home.html\
-│...└── etc. (all html files)\
+│ ... ├── blog.html\
+│ ... ├── home.html\
+│ ... └── etc. (all html files)\
 ├── static\
 │...├── styles\
-|...|...└── style.css\
-│...└── etc. (image files)\
+| ... | ... └── style.css\
+│ ... └── etc. (image files)\
 └── main.py
 
 // Note: I have not included images I have used in the website but they will go in the 'static' folder marked.
