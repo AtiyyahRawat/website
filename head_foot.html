@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<meta name="description" content="A personal blog">
+		<meta name="author" content="Atiyyah Rawat">
+		<title>Atiyyah's Notes</title>
+		<link rel= "stylesheet" type= "text/css" href="../static/styles/style.css">
+		<link rel="icon" href="../static/icon.png">
+	</head>
+	<body>
+		<header>
+		  <div class="container">
+			<div id="branding">
+				<p></p>
+				<h1 style = "font-family:Quicksand light;font-size:1.5vw;">ATIYYAH'S NOTES</h1>
+			</div>
+		  </div>
+		  <div class="container">
+			<div id="menu">
+				<ul>
+					<li><a href="{{ url_for('posts') }}">Posts</a></li>
+					<li><a href="{{ url_for('homepage') }}">Home</a></li>
+				</ul>
+				<div style="clear: both;"></div> 
+			</div>
+		  </div>
+		</header>
+		{% block content %}
+		{% endblock %}
+		<footer>
+			<div class="center">
+				<p style="font-size: 1.5vw"></p>
+				<p style="font-size: 1vw">Atiyyah's Notes ^-^</p>
+			</div>
+		</footer>
+	</body>
+</html>		

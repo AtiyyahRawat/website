@@ -1,0 +1,23 @@
+{% extends "head_foot.html" %}
+{% block content %}
+        <section id ="title">
+			<div class="center">
+				{% block title %}{% endblock %}
+				<div class="intro">
+					<p style="font-size:1.4vw; text-align:center;">{% block description %}{% endblock %}</p>
+				</div>
+			</div>
+		</section>
+		<section class="banner">
+			<div class="box">
+				<img src={% block image %}{% endblock %} alt="Banner" class="center">
+			</div>
+		</section>
+		<section id="article">
+			<div class="container">
+				<div class="center">
+					{% block article %}{% endblock %}
+				</div>
+			</div>
+		</section>
+{% endblock %}

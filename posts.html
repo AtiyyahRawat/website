@@ -1,0 +1,31 @@
+{% extends "head_foot.html" %}
+{% block content %}
+		<section id ="title">
+			<div class="center">
+				<h1 style="color:#cfa29d; font-family:Quicksand light; font-size:5.5vw; text-align:center;">BLOG POSTS</h1>
+				<div class="intro">
+					<p style="font-size:1.4vw; text-align:center;">Longform(ish) writing :) </p>
+				</div>
+			</div>
+		</section>
+		<section id="all_posts">
+    		<div class="center">
+    		{% for index in range(posts_data["num"]) %}	
+        		<div class="post">
+            		<div class="image">
+                    		<a target="_blank" href="{{ url_for(posts_data['link'][index]) }}">
+            					<img src="{{ posts_data['pic'][index] }}">
+            				</a>
+    				</div>
+    				<div class="text">
+            				<a target="_blank" href="{{ url_for(posts_data['link'][index]) }}">
+            					<h1 style="font-size:2vw;">{{ posts_data['title'][index] }}</h1>
+            					<p style="font-size:1.5vw;">{{ posts_data['desc'][index] }}</p>
+            				</a>
+    				</div>
+    				<div style="clear: both;"></div>
+        		</div>
+    		{% endfor %}
+    		</div>
+    	</section>
+{% endblock %}
