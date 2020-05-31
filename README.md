@@ -12,7 +12,7 @@ TO USE:
 │   ├── styles\
 |				└── style.css\
 │   └── etc. (image files)\
-└── main.py\
+└── main.py
 
 // Note: I have not included images I have used in the website but they will go in the 'static' folder marked.
 
